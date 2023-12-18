@@ -17,8 +17,12 @@ body{
 header{width: 100vw;
 height: 100vh;}
 #cabeça{ 
-    width: 96,5;
     position: sticky;
+    width: 100vw;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    z-index: 1;
             background-color: #284B8D;
             padding:2rem;
             color: aliceblue;
@@ -49,22 +53,30 @@ p{
     color: whitesmoke;
 }
 #div1{
-    font-family:cursive ;
-    height: 100vh;
+    font-family: sans-serif, Helvetica, sans-serif;
+    height: fit-content;
     width: 100vw;
     background-color: wheat;
     color: rgb(255, 128, 0);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }
 #div1>h1{
+    margin: 0px auto;
     letter-spacing: 2px;
     font-size: 2.5rem;
 }
 #div1>h2{
+    margin: 6rem auto 0px auto;
+
     margin-top: 6rem;
     margin-bottom: 2rem;
     color: red;
 }
 #div1>p{
+    width: fit-content;
     background-color: black;
     margin: 0 30%;
     box-shadow: 1px 1px 10px 1px black;
@@ -92,9 +104,9 @@ background-color: white;
 width: 20rem;
 height: 5rem;
 color: black;
-position: absolute;
-top: 20rem;
-left: 50rem;
+display: flex;
+justify-content: center;
+align-items: center;
 border: 2px solid rgb(224, 30, 30);
 border-radius: 20px;
 box-shadow: 1px 1px 1rem 1px red;}
@@ -166,77 +178,65 @@ box-shadow: 1px 1px 1rem 1px red;}
     <td>Muro de Terra em Ruínas</td>
     <td>Muro de terra em ruínas ou menos visível.</td>
   </tr>
-  
+  <tr>
+    <td>107</td>
+    <td><img src="mapa - ravina.png" alt=""></td>
+    <td>Fosso/Ravina</td>
+    <td>Fosso/ravina que seja muito pequeno para ser representado pelo símbolo 104.</td>
+  </tr>
+<tr>
+    <td>108</td>
+    <td><img src="mapa - Fosso.png" alt=""></td>
+    <td>Fosso</td>
+    <td>Pequeno fosso, vala seca ou trincheira.</td>
+</tr>
+<tr>
+    <td>109</td>
+    <td><img src="mapa - Cota.png" alt=""></td>
+    <td>Cota</td>
+    <td>Pequena colina de terra ou rocha, que não seja possível desenhar à escala com curvas de nível.</td>
+</tr>
+<tr>
+    <td>110</td>
+    <td><img src="mapa - Cota alongada.png" alt=""></td>
+    <td>Cota Alongada</td>
+    <td>Pequena colina de terra ou rocha alongado, que não seja possível desenhar à escala com curvas de nível.</td>
+</tr>
+<tr>
+    <td>111</td>
+    <td><img src="mapa - pequena depressão.png" alt=""></td>
+    <td>Pequena depressão</td>
+    <td>Depressões naturais ou pequenos buracos, que não seja possível desenhar à escala com curvas de nível.</td>
+</tr>
+<tr>
+    <td>112</td>
+    <td><img src="mapa - buraco.png" alt=""></td>
+    <td>Buraco</td>
+    <td>Buracos artificiais com paredes bem visíveis que não possam ser representados à escala pelo símbolo 104.</td>
+</tr>
+<tr>
+    <td>113</td>
+    <td><img src="mapa - Terreno Irregular.png" alt=""></td>
+    <td>Terreno irregular</td>
+    <td>Zona de buracos ou cotas com demasiados detalhes para ser representada em pormenor.</td>
+</tr>
+<tr>
+    <td>114</td>
+    <td><img src="mapa - terreno muito irregular.png" alt=""></td>
+    <td>Terreno Muito irregular</td>
+    <td>Zona de buracos ou cotas com demasiados detalhes para ser representada em pormenor.</td>
+</tr>
+<tr>
+    <td>115</td>
+    <td><img src="mapa - elemento especial de relevo.png" alt=""></td>
+    <td>Elemento especial de relevo</td>
+    <td>Elemento especial de relevo, claramente distinto.</td>
+</tr>
 
 </tbody>
 </table>
-<div id="div1">
-    <table border="3" id="art">
-        <thead>
-            <tr>
-    <th>cód.</th>
-    <th>Símbolo</th>
-    <th>Nome</th>
-    <th>Descrição</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>107</td>
-            <td><img src="mapa - ravina.png" alt=""></td>
-            <td>Fosso/Ravina</td>
-            <td>Fosso/ravina que seja muito pequeno para ser representado pelo símbolo 104.</td>
-          </tr>
-        <tr>
-            <td>108</td>
-            <td><img src="mapa - Fosso.png" alt=""></td>
-            <td>Fosso</td>
-            <td>Pequeno fosso, vala seca ou trincheira.</td>
-        </tr>
-        <tr>
-            <td>109</td>
-            <td><img src="mapa - Cota.png" alt=""></td>
-            <td>Cota</td>
-            <td>Pequena colina de terra ou rocha, que não seja possível desenhar à escala com curvas de nível.</td>
-        </tr>
-        <tr>
-            <td>110</td>
-            <td><img src="mapa - Cota alongada.png" alt=""></td>
-            <td>Cota Alongada</td>
-            <td>Pequena colina de terra ou rocha alongado, que não seja possível desenhar à escala com curvas de nível.</td>
-        </tr>
-        <tr>
-            <td>111</td>
-            <td><img src="mapa - pequena depressão.png" alt=""></td>
-            <td>Pequena depressão</td>
-            <td>Depressões naturais ou pequenos buracos, que não seja possível desenhar à escala com curvas de nível.</td>
-        </tr>
-        <tr>
-            <td>112</td>
-            <td><img src="mapa - buraco.png" alt=""></td>
-            <td>Buraco</td>
-            <td>Buracos artificiais com paredes bem visíveis que não possam ser representados à escala pelo símbolo 104.</td>
-        </tr>
-        <tr>
-            <td>113</td>
-            <td><img src="mapa - Terreno Irregular.png" alt=""></td>
-            <td>Terreno irregular</td>
-            <td>Zona de buracos ou cotas com demasiados detalhes para ser representada em pormenor.</td>
-        </tr>
-        <tr>
-            <td>114</td>
-            <td><img src="mapa - terreno muito irregular.png" alt=""></td>
-            <td>Terreno Muito irregular</td>
-            <td>Zona de buracos ou cotas com demasiados detalhes para ser representada em pormenor.</td>
-        </tr>
-        <tr>
-            <td>115</td>
-            <td><img src="mapa - elemento especial de relevo.png" alt=""></td>
-            <td>Elemento especial de relevo</td>
-            <td>Elemento especial de relevo, claramente distinto.</td>
-        </tr>
-    </tbody>
-    </table>
-</div>
+
+    
 <div id="div1">
     <h1>.</h1>
     <h2>Sinalética-rochas</h2>
