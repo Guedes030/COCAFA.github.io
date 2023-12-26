@@ -14,22 +14,30 @@ text-align: center;
 }
 body{
     background-color: black;
-    width: 100%;
+    width: 100vw;
+ overflow-x: hidden;
 }
-header{width: 100vw;
-height: 100vh;}
+header{width: fit-content;
+height: 100%;
+
+}
 #cabeça{ 
-    width: 100%;
+    flex-direction: column;
+    width: fit-content;
+height:  fit-content;
     position: fixed;
     display: flex;
-    overflow-x: scroll;
-    justify-content: left;
-    z-index: 1;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 10;
             background-color: #284B8D;
             padding:2rem;
             color: aliceblue;
             border-bottom: 5px solid rgb(214, 250, 159);
+            left: -120%;
         }
+        
        #cabeça::-webkit-scrollbar{
         height: 1rem;
         background-color: orange;
@@ -40,16 +48,16 @@ height: 100vh;}
         border-radius: 100vw;
 
        }
-      
+      #slide1:checked~#cabeça{
+        left: 0%;
+      }
 #cabeça>h2{
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
-    margin-left: 5rem;
-    margin-right: 2em;
     
 
 }
@@ -93,10 +101,12 @@ p{
     font-size: 1.25rem;
 }
 #div1{
+    overflow-x: hidden;
     font-family: sans-serif, Helvetica, sans-serif;
     height: fit-content;
     width: 100%;
-    background-color: wheat;
+    background-color: black;
+    background: linear-gradient( black  , rgb(20, 20, 20) 90% );
     color: rgb(255, 128, 0);
     display: flex;
     align-items: start;
@@ -116,31 +126,69 @@ p{
     color: red;
 }
 #div1>p{
+    font-weight: bold;
+    color: black;
     width: fit-content;
-    background-color: black;
+    background-color: whitesmoke;
     margin: 0 30%;
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 1px 1px 10px 1px white;
     border-top-left-radius: 35px;
     border-bottom-right-radius: 40px;
 }
 
-
-
-
+#logo{
+    position: relative;
+}
+#logo>h1{
+    color: white;
+    top: 50%;
+    left: 50%;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1rem red;
+    letter-spacing: 12px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    position: absolute;
+}
+input{
+    display: none;
+}
+.search{
+    color: white;
+    background-color: #284B8D;
+    display: flex;
+    font-size: 2rem;
+    z-index: 1;
+    padding: 10px;
+    position: fixed;
+    cursor: pointer;
+    width: max-content;
+}
     </style>
     <header>
-        
+        <label for="slide1" class="search">SEARCH</label>
+
+        <input type="radio" name="radio" id="slide1" >
+        <input type="radio" name="radio" id="slide2">
             <div id="cabeça">
+                <h2><label for="slide2" id="linkc"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-excel" viewBox="0 0 16 16">
+                    <path d="M5.18 4.616a.5.5 0 0 1 .704.064L8 7.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 8l2.233 2.68a.5.5 0 0 1-.768.64L8 8.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 8 5.116 5.32a.5.5 0 0 1 .064-.704z"/>
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                  </svg></label></h2>
                 <h2><a href="index.html" id="linkc">HOME</a></h2>
-                <h2><a href="" id="linkc3">ENTRAR NO GRUPO DE WHATSAPP</a></h2>
+                <h2><a href="" id="linkc3">ENTRAR NO GRUPO <br>DE WHATSAPP</a></h2>
                 <h2><a href="TEORIA.html" id="linkc">Teoria-preliminar</a></h2>
                 <h2><a href="mapas.html" id="linkc">Mapas</a></h2>
                 <h2><a href="minigames.html" id="linkc">Minigames</a></h2>
                 
-    
           
         </div>
-<video src="cocafa ‐ Feito com o Clipchamp (1).mp4" autoplay controls loop></video>
+        <div id="logo">
+            <video src="logo cocafa.mp4" autoplay loop></video>
+            <h1>COCAFA</h1>
+        </div>
+      
     </header>
     
         <div id="div1">
