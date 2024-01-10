@@ -7,20 +7,16 @@
 </head>
 <body>
     <style>
-      *{margin: 0;
+       *{margin: 0;
 padding: 0;
 text-align: center;
 }
 body{
-    background-color: black;
-    width: 100vw;
-    
- overflow-x: hidden;
+    background-color: wheat;
+    width: 100%;
 }
-header{width: fit-content;
-height: 100%;
-
-}
+header{width: 100%;
+height: 100%;}
 #cabeça{ 
     flex-direction: column;
     width: fit-content;
@@ -52,15 +48,13 @@ height:  fit-content;
       #slide1:checked~#cabeça{
         left: 0%;
       }
+       
 #cabeça>h2{
-
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
-    
-
 }
 #linkc{
     color:aliceblue;
@@ -81,12 +75,12 @@ p{
 }
 #div1{
     font-family: sans-serif, Helvetica, sans-serif;
+    width: 100vw;
     height: fit-content;
-    width: fit-content;
     background-color: wheat;
     color: rgb(255, 128, 0);
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -103,17 +97,29 @@ p{
     color: red;
 }
 #div1>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     background-color: black;
-    margin: 0 30%;
-    box-shadow: 1px 1px 10px 1px black;
-    border-top-left-radius: 35px;
+    margin: 0 15%;
+    box-shadow: 4px 3px 10px 1px black;
+    border-top-left-radius: 15px;
     border-bottom-right-radius: 40px;
+}
+#div2{
+    background-color: #000b76;
 }
 #trong{
     color: red;
 }
-
+#art{
+    width: 70%;
+    margin: auto;
+}
+tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
 #linkc3{
     color:aliceblue;
     text-decoration: none;
@@ -152,9 +158,9 @@ input{
 }
     </style>
 
-</body>
 <header>
     <label for="slide1" class="search">SEARCH</label>
+
     <input type="radio" name="radio" id="slide1" >
     <input type="radio" name="radio" id="slide2">
         <div id="cabeça">
@@ -193,59 +199,21 @@ input{
                 <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
               </svg>  A equipe</a></h2>
 
-
-            
-  
-</div>
+        </div>
 </header>
-<div id="div1">
-    <br><br><br><br>
-    <h1>Bem-vindos a Teoria relativa a orientação!
-    </h1>
-    <h2>O QUE VOCÊ VAI VER?
-    </h2>
-    <p>Apresentamos as Regras de Orientação Pedestre  (ROP), buscando deixar o mais resumido possível 
-        as informações , extraindo do documentação <strong>OFICIAL DA CBO</strong> tais dados
-    </p>
-    <h2>DEFINIÇÕES</h2>
-    <p>A Orientação é um esporte no qual os competidores navegam de forma independente 
-        através do terreno, auxiliados somente por mapa e bússola, devendo visitar no menor tempo 
-        possível uma série de pontos de controle marcados no terreno. O percurso, definido pela 
-        localização dos pontos de controle, é revelado aos competidores apenas no momento de 
-        suas partidas.</p>
+<main>
 
-        <h2>CATEGORIAS</h2>
-<p>As competições oficiais da CBO podem ser disputadas nas várias categorias previstas nas 
-    regras da IOF de acordo com o sexo (Damas - D e Homens - H), idade e grau de dificuldade
-    (Elite - E, Muito Difícil - A, Difícil - D e Fácil - N)</p>
-</div>    
-<div id="div1">
-    <br><br>
-   <h1>ROTINA DO ATLETA</h1>
-<h2></h2>
-    <p style="text-align: left;padding: 1rem;">
-        Ao chegar ao local da prova, o atleta deverá consultar a lista de partida, que estará colocada em local visível e de destaque 
-        ou como no caso da equipe de orientação, vai estar disponibilizada já no grupo.
-        <br><br>
-        <strong id="trong">&#10149;</strong>  Seguir a direção balizada e/ou sinalização para o local de partida do seu percurso
-        <br><br>
-        <strong id="trong">&#10149;</strong>	  Estar próximo à partida com alguns minutos de antecedência e manter-se em silêncio;
-<br><br>
-<strong id="trong">&#10149;</strong>	Quando o relógio da partida, que pode ser manual (*), der o sinal do seu minuto de partida, 
-o atleta deverá limpar o seu chip num instrumento que estará bem visível e escrito "clear" e logo 
-a frente "check"
-<br><br>
-<strong id="trong">&#10149;</strong>	 É obrigação e responsabilidade do atleta, limpar e checar o seu chip antes de 
-sua partida, para verificar o funcionamento perfeito do chip
-<br><br>
-<strong id="trong">&#10149;</strong>	No próximo sinal deve apanhar o cartão de descrição
-<br><br>
-<strong id="trong">&#10149;</strong>	No próximo sinal identifica seu mapa e o pega, devendo dobra-lo, pois <strong>NÃO É PERMITIDO ESTUDAR SEU PERCURSO</strong>
-<br><br>
-<strong id="trong">&#10149;</strong>	No próximo sinal a partida vai ser liberada, devendo o orientista apenas colocar seu chip no instrumento escrito
-"start"
+    <div id="div1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(214,101,57)" fill-opacity="1" d="M0,320L0,288L48,288L48,224L96,224L96,192L144,192L144,64L192,64L192,160L240,160L240,32L288,32L288,288L336,288L336,64L384,64L384,64L432,64L432,288L480,288L480,320L528,320L528,288L576,288L576,160L624,160L624,256L672,256L672,96L720,96L720,320L768,320L768,160L816,160L816,288L864,288L864,288L912,288L912,128L960,128L960,128L1008,128L1008,64L1056,64L1056,32L1104,32L1104,64L1152,64L1152,32L1200,32L1200,256L1248,256L1248,320L1296,320L1296,192L1344,192L1344,256L1392,256L1392,128L1440,128L1440,0L1392,0L1392,0L1344,0L1344,0L1296,0L1296,0L1248,0L1248,0L1200,0L1200,0L1152,0L1152,0L1104,0L1104,0L1056,0L1056,0L1008,0L1008,0L960,0L960,0L912,0L912,0L864,0L864,0L816,0L816,0L768,0L768,0L720,0L720,0L672,0L672,0L624,0L624,0L576,0L576,0L528,0L528,0L480,0L480,0L432,0L432,0L384,0L384,0L336,0L336,0L288,0L288,0L240,0L240,0L192,0L192,0L144,0L144,0L96,0L96,0L48,0L48,0L0,0L0,0Z"></path></svg>
+        <br><br><br><br>
+        <h1>Bem-vindo a seção "Competições-2024"</h1>
+<h2>Oque você vai ver ?</h2>
+<p>Competições estabelecidas pelo clube no âmbito da AFA e também competições relativas ao ano de 
+    2024 oficiais da CBO
 </p>
-<br><br>
-</div>
-
+    </div>
+<footer>
+</footer>
+</main>
+</body>
 </html>

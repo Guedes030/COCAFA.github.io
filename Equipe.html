@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta type="description" content="Página oficial do COCAFA">
-    <title>COCAFA.oficial</title>
+    <title>Document</title>
 </head>
 <body>
     <style>
-*{margin: 0;
+        *{margin: 0;
 padding: 0;
 text-align: center;
 }
 body{
-    background-color: black;
-    width: 100vw;
+    background-color: wheat;
+    width: 100%;
+    overflow-x: hidden;
     
- overflow-x: hidden;
 }
-header{width: fit-content;
-height: 100%;
-
-}
+header{width: 100vw;
+height: 100vh;}
 #cabeça{ 
     flex-direction: column;
     width: fit-content;
@@ -53,15 +50,13 @@ height:  fit-content;
       #slide1:checked~#cabeça{
         left: 0%;
       }
+       
 #cabeça>h2{
-
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
-    
-
 }
 #linkc{
     color:aliceblue;
@@ -73,6 +68,58 @@ height:  fit-content;
 #linkc:hover{
     color: forestgreen;
 }
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+#div1{
+    font-family: sans-serif, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+    color: rgb(255, 128, 0);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+#div1>h1{
+    margin: 0px auto;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+
+}
+#div1>h2{
+    margin: 6rem auto 0px auto;
+
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: red;
+}
+#div1>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: black;
+    margin: 0 30%;
+    box-shadow: 1px 1px 10px 1px black;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 40px;
+}
+#trong{
+    color: red;
+}
+#art{
+    width: 70%;
+    margin: auto;
+}
+tr:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
 #linkc3{
     color:aliceblue;
     text-decoration: none;
@@ -83,86 +130,13 @@ content: " Alerta:Página não disponível , Não Há grupo registrado!";
 background-color: white;
 width: 20rem;
 height: 5rem;
+color: black;
 display: flex;
 justify-content: center;
 align-items: center;
-color: black;
 border: 2px solid rgb(224, 30, 30);
 border-radius: 20px;
-box-shadow: 1px 1px 1rem 1px red;
-
-}
-video{
-    width: 100vw;
-    height: 100vh;
-}
-h1{
-    font-size: 2.5rem;
-}
-p{
-    font-size: 1.25rem;
-}
-#div1{
-    overflow-x: hidden;
-    font-family: sans-serif, Helvetica, sans-serif;
-    height: fit-content;
-    width: 100%;
-    background-color: black;
-    background: linear-gradient( black  , rgb(20, 20, 20) 90% );
-    color: rgb(255, 128, 0);
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-}
-#div1>h1{
-    margin: 0px auto;
-    letter-spacing: 2px;
-    font-size: 2.5rem;
-}
-#div1>h2{
-    margin: 6rem auto 0px auto;
-
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    color: red;
-}
-#div1>p{
-    font-weight: bold;
-    color: black;
-    width: fit-content;
-    background-color: whitesmoke;
-    margin: 0 30%;
-    box-shadow: 1px 1px 10px 1px white;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 40px;
-}
-
-#logo{
-    background: linear-gradient(white,black);
-    position: relative;
-
-}
-
-img{
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    filter: contrast(118%);
-}
-#logo>h1{
-    color: white;
-    top: 50%;
-    left: 50%;
-    font-weight: 900;
-    font-size: 4rem;
-    text-shadow: 1px 1px 1rem red;
-    letter-spacing: 12px;
-    transform: translate(-50%,-50%);
-    display: flex;
-    position: absolute;
-}
+box-shadow: 1px 1px 1rem 1px red;}
 input{
     display: none;
 }
@@ -182,7 +156,107 @@ input{
 .search:hover{
     box-shadow: 1px 1px 1rem 1px #284B8D;
 }
-    </style>
+.lulp{
+    margin-top: 2rem; 
+    width: fit-content; 
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+width: fit-content;
+position: relative;
+z-index: 0;
+}
+.lulp2{
+    width: fit-content; 
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.lulp,.lulp2>h2{
+    color: black;
+}
+ img{
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    position: relative;
+    box-shadow: 1px 1px 1rem 1px black;
+    z-index: 0;
+ }
+ 
+#info{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+#info:focus~.img1{
+    filter: blur(5px);
+
+}
+#info:focus::after{
+    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
+    background-color: transparent;
+    position: absolute;
+    color: rgb(152, 152, 243);
+    font-weight: 900;
+    font-size: 2.5rem;
+    top: 7rem;
+    right:-9rem;
+   
+}
+#info2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+#info2:focus~.img2{
+    filter: blur(5px);}
+    #info2:focus::after{
+    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
+    background-color: transparent;
+    position: absolute;
+    color: rgb(152, 152, 243);
+    font-weight: 900;
+    font-size: 2.5rem;
+    top: 7rem;
+    right:-9rem;
+   
+}
+#info3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+#info3:focus~.img3{
+    filter: blur(5px);}
+
+    #info3:focus::after{
+    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
+    background-color: transparent;
+    position: absolute;
+    color: rgb(152, 152, 243);
+    font-weight: 900;
+    font-size: 2.5rem;
+    top: 7rem;
+    right:-9rem;
+   
+}
+
+        </style>
+<body>
     <header>
         <label for="slide1" class="search">SEARCH</label>
 
@@ -224,37 +298,40 @@ input{
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                   </svg>  A equipe</a></h2>
 
+              
+            </div>
+            <main>
+                <br><br><br><br>
+<div id="div1">
+    <h1>Bem-vindo a seção "A equipe"</h1>
+    <h2>Finalidade</h2>
+    <p>Compartilhar imagens e vídeos da equipe</p>
 
-                
-          
-        </div>
-        <div id="logo">
-            <img src="orientation.jpg" alt="">
-            <h1>COCAFA</h1>
-        </div>
-      
-    </header>
+    <div class="lulp">
+        <button id="info"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg></button>
+<img src="orientação 1.jpg" alt="" class="img1">
+
+    </div>
+
+    <div  class="lulp2">
+        <button id="info2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg></button>
+        <img src="orientação 2.jpg" alt=""  class="img2">
     
-        <div id="div1">
-            <br><br>
-            <h1>Bem-vindos a página do Clube 
-                de Orientação da Academia da Força Aérea!
-            </h1>
-            <h2>OBJETIVO
-            </h2>
-            <p>permitir que os cadetes associados tenham maior 
-                interação com as atividades desenvolvidas pelo clube 
-            </p>
-            <h2>FINALIDADE</h2>
-            <p>integrar o clube com a equipe por meio da divulgação de vídeos institucionais , projetos,
-                pistas e teorias referentes ao esporte 
-            </p>
-
-            <br><br>
-
-        </div>    
-
-
+    </div>
+    <div class="lulp">
+        <button id="info3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg></button>
+        <img src="orientação 3.jpg"  class="img3" alt="imagem orientista">
         
+            </div>
+</div>
+
+
+            </main>
 </body>
 </html>
