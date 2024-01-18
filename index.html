@@ -13,13 +13,15 @@ padding: 0;
 text-align: center;
 }
 body{
-    background-color: black;
+    background-color: wheat;
     width: 100vw;
     
  overflow-x: hidden;
 }
 header{width: fit-content;
-height: 100%;
+height: fit-content;
+width: 100%;
+
 
 }
 #cabeça{ 
@@ -109,13 +111,13 @@ p{
     font-family: sans-serif, Helvetica, sans-serif;
     height: fit-content;
     width: 100%;
-    background-color: black;
-    background: linear-gradient( black  , rgb(20, 20, 20) 90% );
+    background-color: wheat;
     color: rgb(255, 128, 0);
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    padding-top: 2rem;
 }
 #div1>h1{
     margin: 0px auto;
@@ -136,34 +138,45 @@ p{
     background-color: whitesmoke;
     margin: 0 30%;
     box-shadow: 1px 1px 10px 1px white;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 10px;
 }
 
 #logo{
-    background: linear-gradient(white,black);
+    filter: drop-shadow(1px 1px 2rem black);
+
+    background-size: 100% 400% ;
     position: relative;
-
+    animation: move 4s alternate linear infinite;
+    
 }
+@keyframes move{
+    0%{
+        background-position-y: 0%;
 
+    }100%{
+        background-position: 100%;
+
+    }
+}
 img{
+
     position: relative;
     z-index: 0;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
     filter: contrast(118%);
 }
 #logo>h1{
-    color: white;
-    top: 50%;
-    left: 50%;
+    color: rgb(255, 255, 255);
+   
     font-weight: 900;
     font-size: 4rem;
     text-shadow: 1px 1px 1rem red;
     letter-spacing: 12px;
-    transform: translate(-50%,-50%);
+   justify-content: center;
     display: flex;
-    position: absolute;
+    position: relative;
 }
 input{
     display: none;
@@ -230,9 +243,11 @@ input{
                 
           
         </div>
+        <br><br>
         <div id="logo">
-            <img src="orientation.jpg" alt="">
+            <img src="cocafa.png" alt="">
             <h1>COCAFA</h1>
+            
         </div>
       
     </header>

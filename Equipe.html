@@ -13,7 +13,7 @@ text-align: center;
 }
 body{
     background-color: wheat;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     
 }
@@ -79,7 +79,7 @@ p{
 }
 #div1{
     font-family: sans-serif, Helvetica, sans-serif;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: wheat;
     color: rgb(255, 128, 0);
@@ -158,8 +158,16 @@ input{
 .search:hover{
     box-shadow: 1px 1px 1rem 1px #284B8D;
 }
+#content{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
 .lulp{
-    margin-top: 2rem; 
+    margin-top: 2rem;
+    margin-inline: 4rem; 
     width: fit-content; 
     height: fit-content;
     display: flex;
@@ -186,80 +194,15 @@ z-index: 0;
     height: 20rem;
     display: flex;
     position: relative;
-    box-shadow: 1px 1px 1rem 1px black;
+    box-shadow: 5px 5px 10px 5px black;
     z-index: 0;
  }
  
-#info{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    cursor: pointer;
-    z-index: 1;
-}
-#info:focus~.img1{
-    filter: blur(5px);
-
-}
-#info:focus::after{
-    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
-    background-color: transparent;
-    position: absolute;
-    color: rgb(152, 152, 243);
-    font-weight: 900;
-    font-size: 2.5rem;
-    top: 7rem;
-    right:-9rem;
-   
-}
-#info2{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    cursor: pointer;
-    z-index: 1;
-}
-#info2:focus~.img2{
-    filter: blur(5px);}
-    #info2:focus::after{
-    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
-    background-color: transparent;
-    position: absolute;
-    color: rgb(152, 152, 243);
-    font-weight: 900;
-    font-size: 2.5rem;
-    top: 7rem;
-    right:-9rem;
-   
-}
-#info3{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    cursor: pointer;
-    z-index: 1;
-}
-#info3:focus~.img3{
-    filter: blur(5px);}
-
-    #info3:focus::after{
-    content: "Competição xx em tal lugar no dia xx/yy/zzzz";
-    background-color: transparent;
-    position: absolute;
-    color: rgb(152, 152, 243);
-    font-weight: 900;
-    font-size: 2.5rem;
-    top: 7rem;
-    right:-9rem;
-   
-}
 
         </style>
 <body>
     <header>
+         
         <label for="slide1" class="search">SEARCH</label>
 
         <input type="radio" name="radio" id="slide1" >
@@ -300,40 +243,46 @@ z-index: 0;
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                   </svg>  A equipe</a></h2>
 
-              
+
             </div>
+            
             <main>
+                
                 <br><br><br><br>
 <div id="div1">
-    <h1>Bem-vindo a seção "A equipe"</h1>
+
+    <h1>A equipe </h1>
     <h2>Finalidade</h2>
     <p>Compartilhar imagens e vídeos da equipe</p>
-
+</div>
+<div id="content">
     <div class="lulp">
-        <button id="info"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
-            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-          </svg></button>
+     
 <img src="orientação 1.jpg" alt="" class="img1">
 
     </div>
 
     <div  class="lulp2">
-        <button id="info2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
-            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-          </svg></button>
+        
         <img src="orientação 2.jpg" alt=""  class="img2">
     
     </div>
     <div class="lulp">
-        <button id="info3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-info-square-fill" viewBox="0 0 16 16" id="info">
-            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-          </svg></button>
+        
         <img src="orientação 3.jpg"  class="img3" alt="imagem orientista">
         
             </div>
-</div>
-
-
+            <div  class="lulp">
+               
+                <img src="orientação 4.jpg" alt=""  class="img2">
+            
+        </div>
+        <div  class="lulp2">
+           
+            <img src="orientação 5.jpg" alt=""  class="img2">
+        
+        </div>
+        </div>
             </main>
 </body>
 </html>
